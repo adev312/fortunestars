@@ -184,6 +184,20 @@ function selectRole(role) {
     }
 }
 
+function toggleProjectInfo() {
+    const intro = document.querySelector('.portfolio-intro');
+    const showcase = document.querySelector('.showcase-section');
+    const toggleText = document.getElementById('infoToggleText');
+
+    const isHidden = intro.classList.contains('hidden');
+    intro.classList.toggle('hidden', !isHidden);
+    showcase.classList.toggle('hidden', !isHidden);
+
+    if (toggleText) {
+        toggleText.textContent = isHidden ? 'Hide project info' : 'Show project info';
+    }
+}
+
 function handleLogin(e) {
     e.preventDefault();
     

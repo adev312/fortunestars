@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="portfolio-intro" aria-label="Project overview">
+    <section class="portfolio-intro hidden" aria-label="Project overview">
         <div class="portfolio-card">
             <p class="portfolio-eyebrow">Portfolio Project</p>
             <h1>Fortune Stars School Portal</h1>
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="showcase-section" aria-label="Project preview">
+    <section class="showcase-section hidden" aria-label="Project preview">
         <div class="showcase-header">
             <h2>Preview of the experience</h2>
             <p>This portal UI combines a clean login flow with role-based dashboards for a polished school management demo.</p>
@@ -69,6 +69,10 @@
                 <h2 style="color: var(--primary); margin-bottom: 0.5rem;">Welcome Back</h2>
                 <p style="color: #6b7280;">Fortune Stars School Academic Portal</p>
             </div>
+
+            <button type="button" id="infoToggleBtn" class="login-toggle-info" onclick="toggleProjectInfo()">
+                <span id="infoToggleText">Show project info</span>
+            </button>
             
             <div class="role-selector">
                 <button class="role-btn active" onclick="selectRole('student')">Student</button>
@@ -1072,7 +1076,7 @@
     
     <!-- Generic Modal -->
     <footer class="site-footer">
-        <p>Built as a frontend portfolio project by <strong>Your Name</strong></p>
+        <p>Built as a frontend portfolio project by <strong>Alex osembo</strong></p>
         <p>Skills: HTML, CSS, JavaScript, UI Design</p>
     </footer>
 
