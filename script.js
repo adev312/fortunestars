@@ -20,7 +20,7 @@ const mockData = {
             section: 'A',
             avatar: 'JD',
             subjects: [
-                { name: 'Mathematics', teacher: 'Mr. Okello', score: 88, grade: 'Excellent' },
+                { name: 'Mathematics', teacher: 'Mr. Juma', score: 88, grade: 'Excellent' },
                 { name: 'English Language', teacher: 'Mrs. Nakato', score: 92, grade: 'Excellent' },
                 { name: 'Integrated Science', teacher: 'Mr. Mugisha', score: 85, grade: 'Good' },
                 { name: 'Social Studies', teacher: 'Ms. Auma', score: 78, grade: 'Good' },
@@ -50,7 +50,7 @@ const mockData = {
             section: 'B',
             avatar: 'LJ',
             subjects: [
-                { name: 'Advanced Mathematics', teacher: 'Mr. Okello', score: 82, grade: 'Good' },
+                { name: 'Advanced Mathematics', teacher: 'Mr. Juma', score: 82, grade: 'Good' },
                 { name: 'English Language', teacher: 'Mrs. Nakato', score: 88, grade: 'Excellent' },
                 { name: 'Biology', teacher: 'Ms. Nambi', score: 79, grade: 'Good' },
                 { name: 'Chemistry', teacher: 'Mr. Mukasa', score: 76, grade: 'Good' },
@@ -62,7 +62,7 @@ const mockData = {
     teachers: {
         'TCH001': {
             id: 'TCH001',
-            name: 'Mr. Okello',
+            name: 'Mr. Juma',
             subject: 'Mathematics',
             classes: ['math-g3-a', 'math-g5-a', 'math-g8-a']
         }
@@ -215,7 +215,7 @@ function handleLogin(e) {
             const childId = document.getElementById('childSelect').value;
             user = mockData.students[childId];
         } else if (state.currentRole === 'teacher') {
-            user = { name: 'Mr. Okello', avatar: 'MO', role: 'Teacher', grade: 'Mathematics Dept' };
+            user = { name: 'Mr. Juma', avatar: 'MO', role: 'Teacher', grade: 'Mathematics Dept' };
         } else if (state.currentRole === 'admin') {
             user = { name: 'Admin User', avatar: 'AD', role: 'Administrator', grade: 'System Admin' };
         }
@@ -503,7 +503,7 @@ function scheduleMeeting() {
         <div class="form-group">
             <label>Teacher</label>
             <select>
-                <option>Mr. Okello (Mathematics)</option>
+                <option>Mr. Juma (Mathematics)</option>
                 <option>Mrs. Nakato (English)</option>
                 <option>Mr. Mugisha (Science)</option>
             </select>
@@ -749,7 +749,7 @@ function initializeMessages() {
     const teacherContacts = document.getElementById('teacherContacts');
     if (teacherContacts) {
         const teachers = [
-            { name: 'Mr. Okello', subject: 'Mathematics', color: '#2563eb' },
+            { name: 'Mr. Juma', subject: 'Mathematics', color: '#2563eb' },
             { name: 'Mrs. Nakato', subject: 'English', color: '#8b5cf6' },
             { name: 'Mr. Mugisha', subject: 'Science', color: '#10b981' }
         ];
